@@ -92,6 +92,9 @@ print(row_len)
 transposed_msg = [ [] for i in range(row_len)]
 
 for i in range(0, len(translated_msg)):
+    for row in transposed_msg:
+        row.append()
+    translated_msg[i:i+row_len]
 
     
 
@@ -103,15 +106,15 @@ for i in range(0, len(translated_msg), row_len):
     row = list(translated_msg[i: i+row_len])
     new_msg_rows.append(row)
 
-print(new_msg_rows)
+# print(new_msg_rows)
 
-translated_msg_rows = [ [] for i in range(row_len)]
+# translated_msg_rows = [ [] for i in range(row_len)]
 
-print(translated_msg_rows)
+# print(translated_msg_rows)
 
-for i in range(len(new_msg_rows)):
+# for i in range(len(new_msg_rows)):
 
-    for char in row:
-        translated_msg_rows.append(new_msg_rows[char])
+#     for char in row:
+#         translated_msg_rows.append(new_msg_rows[char])
 
-print(translated_msg_rows)
+# print(translated_msg_rows)
